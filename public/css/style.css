@@ -1,0 +1,68 @@
+img {
+  position: absolute;
+}
+
+#players {
+  position: fixed;
+  text-align: center;
+  padding: 2px;
+  width: 120px;
+  font-size: 9px;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+  color: white;
+}
+
+#alert {
+  position: fixed;
+  text-align: center;
+  padding: 30px;
+  width: 75%;
+  left: 50%;
+  background-color: rgba(0,0,0,0.5);
+  margin-left: -37.5%;
+  z-index: 3;
+  color: white;
+  bottom: 20%;
+}
+
+.player-container {
+  position: absolute;
+}
+body {
+  margin: 0px;
+}
+.health {
+  position: absolute;
+  bottom: 0px;
+  color: green;
+  font-weight: bold;
+  font-style: monospace;
+  background-color: white;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 4px;
+  margin-left: 18px;
+}
+
+#game {
+  width: 1920px;
+  height: 800px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-image: url("../img/background.png");
+  display: inline-block;
+}
+#logbox {
+  text-align: center;
+  margin-top: 10px;
+  border: 2px solid black;
+  height: 50px;
+  padding: 20px;
+  font-family: monospace;
+  word-wrap: break-word;
+  overflow-y: auto;
+  border-radius: 5px;
+  float: right;
+  width: 100%;
+}

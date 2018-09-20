@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>MultiplayerGame</title>
-      <script src="/socket.io/socket.io.js"></script>
-      <script src="client.js"></script>
-   </head>
-   <style>
-   img {
-     position: absolute;
-   }
-   #game {
-     width: 500px;
-     height: 500px;
-     border: 2px solid black;
-   }
-   </style>
-   <body onkeydown="move(event)" onload="spawnPlayer()">
-     <div id="game">
-     </div>
-   </body>
+
+<head>
+  <title>MultiplayerGame</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/nipplejs.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onload="documentLoaded()" onkeypress="moveInterval(event)" style="background:url('img/loading.gif'); background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+  <div id="container" style="display: none;">
+    <div id="players">
+      <h1>Players: 0</h1>
+    </div>
+    <div id="alert" style="display: none;">
+    </div>
+    <div id="dynamic">
+      <div id="game">
+      </div>
+    </div>
+    <div id="logbox">
+    </div>
+  </div>
+  <script src="js/client.js"></script>
+</body>
+
 </html>
